@@ -61,13 +61,13 @@
             </a>
 
             <p class="text-indigo-400 text-xs font-semibold uppercase tracking-wider px-4 py-2 mt-3">Gestión</p>
-            <a href="#" class="sidebar-link"><i data-lucide="store" class="w-4 h-4 flex-shrink-0"></i>Comercios</a>
-            <a href="#" class="sidebar-link"><i data-lucide="users" class="w-4 h-4 flex-shrink-0"></i>Usuarios</a>
-            <a href="#" class="sidebar-link"><i data-lucide="shopping-cart" class="w-4 h-4 flex-shrink-0"></i>Pedidos</a>
-            <a href="#" class="sidebar-link"><i data-lucide="boxes" class="w-4 h-4 flex-shrink-0"></i>Inventario</a>
+            <a href="{{ route('admin.comercios.index') }}" class="sidebar-link {{ request()->routeIs('admin.comercios*') ? 'active' : '' }}"><i data-lucide="store" class="w-4 h-4 flex-shrink-0"></i>Comercios</a>
+            <a href="{{ route('admin.usuarios.index') }}" class="sidebar-link {{ request()->routeIs('admin.usuarios*') ? 'active' : '' }}"><i data-lucide="users" class="w-4 h-4 flex-shrink-0"></i>Usuarios</a>
+            <a href="{{ route('admin.pedidos.index') }}" class="sidebar-link {{ request()->routeIs('admin.pedidos*') ? 'active' : '' }}"><i data-lucide="shopping-cart" class="w-4 h-4 flex-shrink-0"></i>Pedidos</a>
+            <a href="{{ route('admin.inventario.index') }}" class="sidebar-link {{ request()->routeIs('admin.inventario*') ? 'active' : '' }}"><i data-lucide="boxes" class="w-4 h-4 flex-shrink-0"></i>Inventario</a>
 
             <p class="text-indigo-400 text-xs font-semibold uppercase tracking-wider px-4 py-2 mt-3">Reportes</p>
-            <a href="#" class="sidebar-link"><i data-lucide="bar-chart-2" class="w-4 h-4 flex-shrink-0"></i>Reportes de Ventas</a>
+            <a href="{{ route('admin.reportes.index') }}" class="sidebar-link {{ request()->routeIs('admin.reportes*') ? 'active' : '' }}"><i data-lucide="bar-chart-2" class="w-4 h-4 flex-shrink-0"></i>Reportes de Ventas</a>
         </nav>
 
         <div class="px-3 py-4 border-t border-white/10">
