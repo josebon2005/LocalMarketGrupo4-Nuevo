@@ -55,10 +55,7 @@
             <a href="{{ route('admin.categorias.index') }}" class="sidebar-link {{ request()->routeIs('admin.categorias*') ? 'active' : '' }}">
                 <i data-lucide="tag" class="w-4 h-4 flex-shrink-0"></i>Categorías
             </a>
-            <a href="#" class="sidebar-link">
-                <i data-lucide="package" class="w-4 h-4 flex-shrink-0"></i>Productos
-                <span class="ml-auto bg-white/10 text-indigo-200 text-xs px-2 py-0.5 rounded-full">Pronto</span>
-            </a>
+            <a href="{{ route('admin.productos.index') }}" class="sidebar-link {{ request()->routeIs('admin.productos*') ? 'active' : '' }}"><i data-lucide="package" class="w-4 h-4 flex-shrink-0"></i>Productos</a>
 
             <p class="text-indigo-400 text-xs font-semibold uppercase tracking-wider px-4 py-2 mt-3">Gestión</p>
             <a href="{{ route('admin.comercios.index') }}" class="sidebar-link {{ request()->routeIs('admin.comercios*') ? 'active' : '' }}"><i data-lucide="store" class="w-4 h-4 flex-shrink-0"></i>Comercios</a>
