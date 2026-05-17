@@ -11,6 +11,7 @@ class Comercio extends Model
 
     protected $fillable = [
         'user_id',
+        'categoria_id',
         'nombre',
         'descripcion',
         'logo',
@@ -23,6 +24,11 @@ class Comercio extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function categoria()
+    {
+        return $this->belongsTo(Categoria::class);
     }
 
     public function productos()
