@@ -12,11 +12,16 @@ class Categoria extends Model
     protected $fillable = [
         'nombre',
         'descripcion',
-        'icono',
+        'activo',
     ];
 
     public function productos()
     {
         return $this->hasMany(Producto::class);
+    }
+
+    public function comercios()
+    {
+        return $this->hasMany(Comercio::class);
     }
 }
